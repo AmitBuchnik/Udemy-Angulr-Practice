@@ -12,6 +12,11 @@
             "element",
             "app",
             "kebab-case"
-        ]
+        ],
+        "no-inferrable-types": [
+            false,
+            "ignore-params"
+        ],
+        "no-trailing-whitespace": false,
     }
 }
