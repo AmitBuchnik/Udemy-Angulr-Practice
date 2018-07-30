@@ -9,6 +9,10 @@ import { Targil2Component } from './targil2/targil2.component';
 import { Targil3Component } from './targil3/targil3.component';
 import { CokpitComponent } from './targil3/cokpit.component';
 import { ServerElementComponent } from './targil3/server-element.component';
+import { Targil4Component } from './targil4/targil4.component';
+import { GameControlComponent } from './targil4/game-control.component';
+import { OddComponent } from './targil4/odd.component';
+import { EvenComponent } from './targil4/even.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ServerElementComponent } from './targil3/server-element.component';
     Targil2Component,
     Targil3Component,
     CokpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    Targil4Component,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
