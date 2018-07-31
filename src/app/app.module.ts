@@ -20,6 +20,9 @@ import { BetterHighlightDirective } from './better-highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { NewAccountComponent } from './targil6/new-account/new-account.component';
 import { AccountComponent } from './targil6/account/account.component';
+import { Targil7Component } from './services/targil7.component';
+import { ActiveUsersComponent } from './services/active-users/active-users.component';
+import { InactiveUsersComponent } from './services/inactive-users/inactive-users.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { AccountComponent } from './targil6/account/account.component';
     UnlessDirective,
     Targil6Component,
     AccountComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    Targil7Component,
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,
