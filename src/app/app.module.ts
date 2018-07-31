@@ -13,6 +13,10 @@ import { Targil4Component } from './targil4/targil4.component';
 import { GameControlComponent } from './targil4/game-control.component';
 import { OddComponent } from './targil4/odd.component';
 import { EvenComponent } from './targil4/even.component';
+import { Targil5Component } from './targil5/targil5.component';
+import { BasicHighlightDirective } from './basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { EvenComponent } from './targil4/even.component';
     Targil4Component,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    Targil5Component,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
