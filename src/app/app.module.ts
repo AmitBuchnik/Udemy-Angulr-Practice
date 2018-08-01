@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TabContainerComponent } from './tab-container.component';
@@ -23,6 +24,16 @@ import { AccountComponent } from './targil6/account/account.component';
 import { Targil7Component } from './services/targil7.component';
 import { ActiveUsersComponent } from './services/active-users/active-users.component';
 import { InactiveUsersComponent } from './services/inactive-users/inactive-users.component';
+import { Targil8Component } from './routers/targil8.component';
+import { HomeComponent } from './routers/home/home.component';
+import { UserComponent } from './routers/users/user/user.component';
+import { UsersComponent } from './routers/users/users.component';
+import { EditServerComponent } from './routers/servers/edit-server/edit-server.component';
+import { ServerComponent } from './routers/servers/server/server.component';
+import { ServersService } from './routers/servers/servers.service';
+import { ServersComponent } from './routers/servers/servers.component';
+import { appRoutes } from './routes';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -46,13 +57,24 @@ import { InactiveUsersComponent } from './services/inactive-users/inactive-users
     NewAccountComponent,
     Targil7Component,
     ActiveUsersComponent,
-    InactiveUsersComponent
+    InactiveUsersComponent,
+    Targil8Component,
+    HomeComponent,
+    UserComponent,
+    UsersComponent,
+    EditServerComponent,
+    ServersComponent,
+    ServerComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    ServersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
