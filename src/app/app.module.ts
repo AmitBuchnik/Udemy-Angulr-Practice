@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TabContainerComponent } from './tab-container.component';
@@ -32,8 +31,9 @@ import { EditServerComponent } from './routers/servers/edit-server/edit-server.c
 import { ServerComponent } from './routers/servers/server/server.component';
 import { ServersService } from './routers/servers/servers.service';
 import { ServersComponent } from './routers/servers/servers.component';
-import { appRoutes } from './routes';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -65,12 +65,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     EditServerComponent,
     ServersComponent,
     ServerComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [
     ServersService
