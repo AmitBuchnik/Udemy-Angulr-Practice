@@ -32,6 +32,6 @@ export class ServerComponent implements OnInit {
       relativeTo: this.route,
       queryParamsHandling: 'preserve',
       preserveFragment: true
-    })
+    });
   }
 }
