@@ -34,6 +34,10 @@ import { ServersComponent } from './routers/servers/servers.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { ObsComponent } from './observables/obs.component';
+import { ObsHomeComponent } from './observables/home/home.component';
+import { ObsUserComponent } from './observables/user/user.component';
+import { ObsRoutingModule } from './observables/obs-routing.module';
 
 @NgModule({
   declarations: [
@@ -66,12 +70,16 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     ServersComponent,
     ServerComponent,
     PageNotFoundComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    ObsComponent,
+    ObsHomeComponent,
+    ObsUserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    // AppRoutingModule,
+    ObsRoutingModule
   ],
   providers: [
     ServersService
