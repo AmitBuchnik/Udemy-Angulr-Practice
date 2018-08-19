@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { UsersService } from 'src/app/observables/users.service';
+import { UsersService } from '../users.service';
 
 @Component({
   selector: 'obs-user',

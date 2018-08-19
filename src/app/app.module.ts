@@ -38,6 +38,9 @@ import { ObsComponent } from './observables/obs.component';
 import { ObsHomeComponent } from './observables/home/home.component';
 import { ObsUserComponent } from './observables/user/user.component';
 import { ObsRoutingModule } from './observables/obs-routing.module';
+import { FormsComponent } from './forms/forms.component';
+import { TemplateDerivenFormsComponent } from './template-deriven-forms/template-deriven-forms.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +76,10 @@ import { ObsRoutingModule } from './observables/obs-routing.module';
     ErrorPageComponent,
     ObsComponent,
     ObsHomeComponent,
-    ObsUserComponent
+    ObsUserComponent,
+    FormsComponent,
+    TemplateDerivenFormsComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
