@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TabContainerComponent } from './tab-container.component';
@@ -41,6 +41,7 @@ import { ObsRoutingModule } from './observables/obs-routing.module';
 import { FormsComponent } from './forms/forms.component';
 import { TemplateDerivenFormsComponent } from './template-deriven-forms/template-deriven-forms.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { FormsReactiveAssignmentComponent } from './forms-reactive-assignment/forms-reactive-assignment.component';
 
 @NgModule({
   declarations: [
@@ -79,11 +80,13 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
     ObsUserComponent,
     FormsComponent,
     TemplateDerivenFormsComponent,
-    ReactiveFormsComponent
+    ReactiveFormsComponent,
+    FormsReactiveAssignmentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     // AppRoutingModule,
     ObsRoutingModule
   ],
