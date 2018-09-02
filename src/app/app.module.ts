@@ -42,6 +42,12 @@ import { FormsComponent } from './forms/forms.component';
 import { TemplateDerivenFormsComponent } from './template-deriven-forms/template-deriven-forms.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { FormsReactiveAssignmentComponent } from './forms-reactive-assignment/forms-reactive-assignment.component';
+import { Pipes1Component } from './pipes/pipes1/pipes1.component';
+import { ShortenPipe } from './pipes/shorten.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
+import { AsignmentPipe } from './pipes/asignment.pipe';
+import { ReversePipe } from './pipes/reverse.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -81,7 +87,12 @@ import { FormsReactiveAssignmentComponent } from './forms-reactive-assignment/fo
     FormsComponent,
     TemplateDerivenFormsComponent,
     ReactiveFormsComponent,
-    FormsReactiveAssignmentComponent
+    FormsReactiveAssignmentComponent,
+    Pipes1Component,
+    ShortenPipe,
+    FilterPipe,
+    ReversePipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,
