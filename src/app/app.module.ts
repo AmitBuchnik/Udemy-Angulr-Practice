@@ -45,7 +45,6 @@ import { FormsReactiveAssignmentComponent } from './forms-reactive-assignment/fo
 import { Pipes1Component } from './pipes/pipes1/pipes1.component';
 import { ShortenPipe } from './pipes/shorten.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
-import { AsignmentPipe } from './pipes/asignment.pipe';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 
